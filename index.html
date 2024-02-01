@@ -1,0 +1,55 @@
+
+<html>
+    <head>
+        <meta charset="viewport"
+         content="width=device-width,initial-scale=1.0">
+        <title>
+            Happiness
+        </title>
+        <link rel="stylesheet"
+        href="style.css">
+    </head>
+    <body>
+        <div class="column1">
+            <h2>Friends</h2>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            
+
+        </div>
+        <div class="login-container">
+        
+        <h1>Login Page</h1>
+        <form onsubmit= "return pass()" action="happiness.html">
+        <label for="Uname">User Id</label>
+        <input type="text" id="username" name="username" required >
+        <label for="password">Password</label>
+        <input type="password" name="passwors" id="password" required><br>
+        <button type="submit">Submit</button>     
+        </form>
+        <p
+        class="register-link"> Don't have an account <a href="......">Register Here</a></p>
+        </div>
+        <div class="column2"> <h2>Forever</h2></div>
+        <script>
+            function pass() {
+                var username= document.getElementById("username").value;
+                var password= document.getElementById("password").value;
+                var correctusername= "Happiness";
+                var correctpassword= "Preet143";
+                if (username === correctusername && password === correctpassword)
+                {
+                    alert("Click the OK for welcome to the world of beauty");
+                    window.location.href= "happiness.html";
+                    
+                }
+                else {
+                    alert("Wrong password and ID");
+                    
+                }
+                return false;
+            }
+        </script>
+    </body>
+</html>
